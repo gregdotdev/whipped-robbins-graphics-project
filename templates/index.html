@@ -1,19 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Whipped Robbins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #ffe6ef;
+      color: #000;
+      padding-bottom: 60px; /* to avoid content hidden behind fixed footer */
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 5%;
+      background: #ffe6ef;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-weight: 900;
+      font-size: 1.2rem;
+      margin-left: 40px; /* move logo slightly to the right */
+    }
+
+    .logo img {
+      width: 70px;
+      margin-right: 10px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #000;
+      font-weight: 700;
+    }
+
+    .login-btn {
+      background: #ffbdd1;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      padding: 50px 5%;
+      min-height: 70vh;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+    }
+
+    .hero-text .pink {
+      color: #f9a9be;
+      font-weight: 900;
+      text-decoration: underline;
+    }
+
+    .buy-btn {
+      margin-top: 20px;
+      background: #ff90b3;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hero-img img {
+      max-width: 1000px;
+      width: 100%;
+      width: 750px;
+    }
+
+    footer {
+      background: #fa5b89;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+      font-size: 1rem;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero-img {
+        margin-top: 30px;
+      }
+
+      .logo {
+        margin-left: 10px;
+      }
+    }
+  </style>
+</head>
 <body>
-    <div class="App">
-        <header class="App-header">
-            <img src="{{ url_for('static', filename='Octocat.png') }}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Flask
-            </p>
-            <p class="small">
-                Edit <code>templates/index.html</code> and refresh to see your changes!
-            </p>
-        </header>
-    </div>
-</body>
 
+  <header>
+    <div class="logo">
+      <img src="https://cdn.victims.bio/uploads/files/logo-dessert-1745414216196-150947333.png" alt="Whipped Robbins" />
+      <span>Whipped-Robbins</span>
+    </div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <button class="login-btn">👤 Customer Log-in</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>All you <br/> need is <br/><span class="pink">dessert</span></h1>
+        <button class="buy-btn">🛍️ Buy now!</button>
+      </div>
+      <div class="hero-img">
+        <img src="https://cdn.victims.bio/uploads/files/desserts@1-1280x863 1 (1)-1745414487706-52195971.png" alt="Dessert Character"/>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>10% OFF</strong> for the first customers! use the code: <strong>10OFF</strong></p>
+  </footer>
+
+</body>
 </html>
