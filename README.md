@@ -1,13 +1,39 @@
-# GitHub Codespaces ♥️ Flask
+# 🍰 Whipped Robbins - Landing Page
 
-Welcome to your shiny new Codespace running Flask! We've got everything fired up and running for you to explore Flask.
+A vibrant and responsive landing page for **Whipped Robbins**, a dessert brand that makes your cravings irresistible. Built with HTML and CSS only, this page is designed to be mobile-friendly, eye-catching, and effective for promotion.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+---
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+## 🔥 Features
 
-To run this application:
+- 💻 **Responsive Layout** – Works great on desktops, tablets, and phones.
+- 🎨 **Stylish Design** – Soft pink color palette with bold, dessert-themed typography.
+- 🍓 **Fixed Promotion Banner** – Stays at the bottom of the screen for maximum visibility.
+- 🍰 **Call-to-Action Button** – Encourages users to buy with a standout CTA.
+- 👤 **Login Button** – Styled button for customer access.
 
-```
-flask --debug run
-```
+---
+
+## 🧱 Built With
+
+- HTML5
+- CSS3 (no frameworks)
+- Google Fonts (Roboto)
+
+---
+
+## 📸 Preview
+
+![Preview Screenshot](./preview.png)  
+*Note: Replace with your actual screenshot image of the landing page.*
+
+---
+
+## 🚀 Getting Started
+
+To run this project locally:
+
+```bash
+git clone https://github.com/your-username/whipped-robbins-landing.git
+cd whipped-robbins-landing
+open index.html
