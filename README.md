@@ -34,6 +34,6 @@ A vibrant and responsive landing page for **Whipped Robbins**, a dessert brand t
 To run this project locally:
 
 ```bash
-git clone https://github.com/your-username/whipped-robbins-landing.git
+git clone https://github.com/gregdotdev/whipped-robbins-landing.git
 cd whipped-robbins-landing
 open index.html
