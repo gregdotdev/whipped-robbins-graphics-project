@@ -25,7 +25,6 @@ A vibrant and responsive landing page for **Whipped Robbins**, a dessert brand t
 ## 📸 Preview
 
 ![Preview Screenshot](./preview.png)  
-*Note: Replace with your actual screenshot image of the landing page.*
 
 ---
 
